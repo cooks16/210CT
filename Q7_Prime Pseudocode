@@ -1,0 +1,12 @@
+PRIME(n, x)
+    if n is divisible by 2:
+        return False
+    elif n is equal to x:
+        return True
+    else:
+        if n is divisible b x:
+            return False
+        else:
+            return PRIME(n, x + 2)
+
+PRIME(n, 3)

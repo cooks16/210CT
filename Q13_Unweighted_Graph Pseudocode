@@ -1,0 +1,20 @@
+CLASS NODE
+    __INIT__ (self, value)
+        create new node with the value given
+
+CLASS GRAPH
+    __INIT__ (self)
+        edge = a list of lists containing each nodes possible connections
+        edge_location = a dictionary of nodes and the position of its list in the list above
+
+    ADD_NODE(self, x)
+        for each list in edge
+            add 0 to the end
+        create a new list for the new node at the end of edge, the same length as all others
+        add the new node and the position of the new list to edge_location
+
+    ADD_EDGE(self, x, y)
+        find the list for node x
+        update link to node y in the list
+        find the list for node y
+        update link to node x in the list

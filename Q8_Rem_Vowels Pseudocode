@@ -1,0 +1,9 @@
+vowels <- list of all vowels
+REMOVE_VOWEL (string, n)
+    If len(vowels = 0)
+        return string
+    If vowels[n] in string:
+        vowel[n] in string <- ""
+        return REMOVE_VOWELS(string, n+1)
+    else:
+        return REMOVE_VOWELS(string, n+1)

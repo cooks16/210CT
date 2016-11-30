@@ -1,0 +1,11 @@
+REVERSE(A)
+    b <- empty string
+    c <- empty string
+    for letter in string:
+        if letter is not " ":
+            b <- b + letter
+        else:
+            c <- b + " " + c
+            b <- empty string
+        c = b + " " + c
+

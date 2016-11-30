@@ -1,0 +1,12 @@
+PERFECT-SQUARE(A)
+    i <- A * A
+    j <- A
+    while i > A
+        j <- j // 2
+        i <- j * j
+    while i < A
+        j <- j + 1
+        i <- j * j
+    j <- j - 1
+    i <- j * j
+    print (i)
